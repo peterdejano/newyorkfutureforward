@@ -1,0 +1,216 @@
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url(assets/PostGrotesk-Light.eot);
+    src: url(assets/PostGrotesk-Light.eot?#iefix) format("embedded-opentype"), 
+    url(assets/PostGrotesk-Light.woff) format("woff"), 
+    url(assets/PostGrotesk-Light.svg#PostGrotesk-Light) format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.video-size {
+    height:578px !important;
+    width:100% !important;
+    overflow:hidden;
+    position: relative;
+    z-index: 1;
+    background: none repeat scroll 0 0 #2581e8;
+}
+
+.video-size > video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.overlay{
+    background: url(assets/block_overlay.png);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header{
+    background: #fff;
+    position: relative;
+    margin-top: 20px;
+    z-index: 3;
+    margin-left: 40px;
+    margin-bottom: 5.7%;
+}
+
+.header-logo{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    margin-left: 650px;
+}
+
+#row {
+    background-color:#eeeeee;
+    display:inline;     
+}
+
+#row1 li{
+    display: inline;
+    float: left;
+    position: relative;
+    z-index: 5;
+    padding-right: 140px;
+    font-weight: 100;
+    font-size: 18px;
+    font-family: "Post Grotesk", Helvetica, Arial, sans-serif;
+}
+
+#row-footer {
+    background-color:#eeeeee;
+    display:inline;     
+}
+
+#row-footer1 li{
+    margin-top: 5%;
+    display: inline;
+    float: left;
+    position: relative;
+    z-index: 5;
+    padding-right: 20%;
+    font-weight: 100;
+    font-size: 18px;
+    font-family: "Post Grotesk", Helvetica, Arial, sans-serif;
+}
+
+
+hr {
+  display: inline-block;
+  height: .1rem;
+  width: 12%;
+  margin: 0;
+  background: black;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.two:hover ~ hr {
+  margin-left: 28%;
+}
+
+.three:hover ~ hr {
+  margin-left: 56%;
+}
+
+.desc{
+    width: 78%;
+    margin-left: 40px;
+}
+
+.second:hover ~ hr {
+  margin-left: 44%;
+}
+
+.third:hover ~ hr {
+  margin-left: 70%;
+}
+
+
+h1{
+     z-index: 5;
+    position: relative;
+    font-weight: 100;
+    font-size: 19px;
+    font-family: "Post Grotesk", Helvetica, Arial, sans-serif;
+    margin-top: 12%;
+}
+
+.wrapper{
+    display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 40px;
+  justify-content: center;
+
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  margin-top: 50px;
+  padding:5px;
+
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  position: relative;
+  z-index: 5;
+}
+
+.footer{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 3%;
+    position: relative;
+    z-index: 5;
+}
+
+.footer-det{
+    font-size: 19px;
+    font-family: "Post Grotesk", Helvetica, Arial, sans-serif;
+}
+
+.rotate-image{
+    width: 2%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    position: absolute;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+@media (max-width: 544px) {
+  .wrapper{
+    padding: 0px;
+  }
+  .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+  .container{
+    margin-left: 0px;
+  }
+  #row1 li{
+    display: none;
+  }
+  .header-logo{
+    display: none;
+  }
+  hr{
+    display: none;
+  }
+  #row-footer1 li{
+    margin-left: 0%;
+    margin-bottom: 10%;
+  }
+
+}
+
+/*Cursor Pointer*/
+
+#cursor-pointer{
+     cursor: url(assets/arrow.png), auto;
+}
